@@ -31,7 +31,7 @@ void draw()
   for(i=0;i<num;i++){
   hue[i]=(dia[i]-5)*360/maxdia;
   stroke(hue[i],81,78,9); noFill();  
-  if(dia[i]<=maxdia) circle(width/2,height/2,dia[i]);  else dia[i]=0;
+  if(dia[i]<=maxdia) circle(width/2,height/2,dia[i],dia[i]);  else dia[i]=0;
   dia[i]+=inc;
   }
   inc+=acc;
